@@ -16,7 +16,7 @@ namespace FrameDesign.Example
             mKilledEnemyCount++;
             if (mKilledEnemyCount == 10)
             {
-                GameOverObj.SetActive(true);
+                GamePassEvent.Trigger();
             }
         }
     }
