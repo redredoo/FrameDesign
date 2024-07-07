@@ -9,7 +9,7 @@ namespace FrameDesign
     {
         private static Action mOnEvent;
         /// <summary>
-        /// 事件注册
+        /// 事件注册 
         /// </summary>
         /// <param name="onEvent"></param>
         public static void Register(Action onEvent)
