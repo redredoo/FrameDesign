@@ -6,33 +6,8 @@ using UnityEngine.Events;
 
 namespace FrameDesign.Example
 {
-    public static class GameStartEvent
+    public class GameStartEvent: Event<GameStartEvent>
     {
-        private static Action mOnEvent;
-        /// <summary>
-        /// 事件注册
-        /// </summary>
-        /// <param name="onEvent"></param>
-        public static void Register(Action onEvent)
-        {
-            mOnEvent += onEvent;
-        }
 
-       /// <summary>
-       /// 取消注册
-       /// </summary>
-       /// <param name="onEvent"></param>
-        public static void UnRegister(Action onEvent)
-        {
-            mOnEvent -= onEvent;
-        }
-
-        /// <summary>
-        /// 触发事件
-        /// </summary>
-        public static void Trigger()
-        {
-            mOnEvent?.Invoke();
-        }
     }
 }
