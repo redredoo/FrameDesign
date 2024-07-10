@@ -8,16 +8,9 @@ namespace FrameDesign.Example
     {
         public GameObject GameOverObj;
 
-        static int mKilledEnemyCount = 0;
-
         private void OnMouseDown()
         {
             Destroy(gameObject);
-            mKilledEnemyCount++;
-            if (mKilledEnemyCount == 10)
-            {
-                GamePassEvent.Trigger();
-            }
         }
     }
 }

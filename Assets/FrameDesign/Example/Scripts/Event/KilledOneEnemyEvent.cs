@@ -1,14 +1,12 @@
-using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 namespace FrameDesign.Example
 {
-    /// <summary>
-    /// 游戏结束事件
-    /// </summary>
-    public class GamePassEvent: Event<GamePassEvent>
+    //击杀敌人事件（事件拓展变得容易）
+    public class KilledOneEnemyEvent : Event<KilledOneEnemyEvent>
     {
 
     }
 }
+
